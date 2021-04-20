@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aupdate">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/suimg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="6dp"
+            android:padding="08dp" />
+
+        <TextView
+            android:id="@+id/suemail"
+            android:layout_width="237dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:text="Name :" />
+
+            <EditText
+                android:id="@+id/suname"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:textAllCaps="true"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Application No :" />
+
+            <EditText
+                android:id="@+id/suappno"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/thin"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:text="Date of Admission:" />
+
+            <EditText
+                android:id="@+id/sudoa"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:text="Present Address :" />
+
+            <EditText
+                android:id="@+id/suaddress"
+                android:layout_width="269dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/thin"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:text="Zip :" />
+
+            <EditText
+                android:id="@+id/suzip"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:text="State :" />
+
+            <EditText
+                android:id="@+id/sustate"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="Date Of Birth :" />
+
+            <EditText
+                android:id="@+id/sudob"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Gender :" />
+
+            <EditText
+                android:id="@+id/augender"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Contact No :" />
+
+            <EditText
+                android:id="@+id/suphone"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Emergancy Contanct No:" />
+
+            <EditText
+                android:id="@+id/suephone"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Branch :" />
+
+            <EditText
+                android:id="@+id/subranch"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:textSize="20dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Year :" />
+
+            <EditText
+                android:id="@+id/suclass"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="Div-Roll :" />
+
+            <EditText
+                android:id="@+id/sudroll"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text=""/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="152dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="19dp"
+                android:fontFamily="@font/josefinsanslight"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:text="SEM :" />
+
+            <EditText
+                android:id="@+id/susem"
+                android:layout_width="269dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#303561"
+                android:textSize="20dp"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="22dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center_vertical"
+                android:text=""/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/suupdate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/loginbutton"
+            android:fontFamily="@font/light"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="#303561"
+            android:textSize="15dp"
+            android:text="  Done  " />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".msg">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="0.4in"
+        android:background="#FF018786"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/msg_profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+             />
+
+        <TextView
+            android:id="@+id/msg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:paddingLeft="10dp"
+            android:fontFamily="@font/dd"
+            android:hint="User Name"
+            android:textColor="#F6F6F6"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mrecycler_view"
+        android:layout_below="@id/toolbar"
+        android:layout_above="@id/bottom"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:id="@+id/bottom"
+        android:background="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_sendmsg"
+            android:background="@android:color/transparent"
+            android:hint="Type a message..."
+            android:textColorHint="#626262"
+            android:paddingLeft="0.2in"
+            android:fontFamily="@font/light"
+            android:textColor="#000000"
+            android:layout_toLeftOf="@id/btn_sendmsg"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/btn_sendmsg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/send_btn"
+            android:layout_margin="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

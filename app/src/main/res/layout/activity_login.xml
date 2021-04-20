@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="747dp"
+        android:layout_height="319dp"
+        android:layout_marginBottom="420dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/anim1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/thin"
+        android:gravity="top"
+        android:paddingLeft="17dp"
+        android:text="Login"
+        android:textColor="#303561"
+        android:textSize="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="351dp"
+        android:layout_height="58dp"
+        android:background="@drawable/inputbackground"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:textColor="#303561"
+        android:fontFamily="@font/light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
+
+    <EditText
+        android:id="@+id/etpassword"
+        android:layout_width="351dp"
+        android:layout_height="58dp"
+        android:background="@drawable/inputbackground"
+        android:ems="10"
+        android:fontFamily="@font/light"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.576" />
+
+    <Spinner
+        android:id="@+id/spselect"
+        android:layout_width="363dp"
+        android:layout_height="68dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69" />
+
+    <Button
+        android:id="@+id/btnsignin"
+        android:layout_width="158dp"
+        android:layout_height="63dp"
+        android:background="@drawable/loginbutton"
+        android:fontFamily="@font/light"
+        android:text="Sign in"
+        android:textColor="#303561"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.118"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.811" />
+
+    <TextView
+        android:id="@+id/tvforgot"
+        android:layout_width="144dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="241dp"
+        android:layout_marginLeft="241dp"
+        android:fontFamily="@font/thin"
+        android:gravity="center"
+        android:text="Forgot Password?"
+        android:textColor="#615FB0"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <Button
+        android:id="@+id/btnshow"
+        android:layout_width="98dp"
+        android:layout_height="59dp"
+        android:background="#00ffffff"
+        android:text="Show"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:fontFamily="@font/thin"
+        app:layout_constraintBottom_toBottomOf="@+id/etpassword"
+        app:layout_constraintEnd_toEndOf="@+id/etpassword"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etpassword"
+        app:layout_constraintTop_toTopOf="@+id/etpassword"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

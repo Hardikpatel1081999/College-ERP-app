@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <CheckedTextView
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_margin="15dp"
+        android:id="@+id/studentname"
+        android:text="Hardik Patel"
+        android:gravity="center_vertical"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/thin"
+        android:textSize="18dp"
+        android:checked="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F3EFEF" />
+
+    <Button
+        android:id="@+id/sbtnnext"
+        android:background="#DBDBEA"
+        android:fontFamily="@font/thin"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEXT" />
+</LinearLayout>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adduser">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="311dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/light"
+                android:text="Register"
+                android:textColor="#303561"
+                android:textSize="50dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userprofileimg"
+                android:layout_width="wrap_content"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:elevation="1dp"
+                android:src="@drawable/defaultuserprofile"
+                app:civ_border_color="#eeeeee"
+                app:civ_border_width="05dp" />
+
+            <EditText
+                    android:id="@+id/etusername"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/thin"
+                    android:hint="Name"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etuserApplicationNo."
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="Application No."
+                    android:textAllCaps="true"
+                    android:inputType="textCapWords|textCapSentences"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etuserDOA"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="Date of Admission / Joining"
+                    android:inputType="date"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etuseradress"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:gravity="start|center"
+                    android:hint=" Present Address"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etuserzip"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="Zip Code"
+                    android:inputType="numberDecimal"
+                    android:paddingLeft="20dp" />
+
+                <Spinner
+                    android:id="@+id/etuserstate"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/thin"
+                    android:gravity="center"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etuserDOB"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="DOB"
+                    android:inputType="date"
+                    android:paddingLeft="20dp" />
+
+                <Spinner
+                    android:id="@+id/etusergender"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/thin"
+                    android:gravity="center"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etusernationality"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="Nationality"
+                    android:inputType="text|textCapCharacters"
+                    android:textAllCaps="true"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etuserphoneno"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="Contanct no."
+                    android:inputType="phone"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etuserephoneno"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="Emergancy Contanct no."
+                    android:inputType="phone"
+                    android:paddingLeft="20dp" />
+
+            <Spinner
+                android:id="@+id/etuserselect"
+                android:layout_width="335dp"
+                android:layout_height="55dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/thin"
+                android:gravity="center"
+                android:paddingLeft="20dp" />
+
+                <Spinner
+                    android:id="@+id/etuserbranch"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/thin"
+                    android:gravity="center"
+                    android:paddingLeft="20dp" />
+
+                <Spinner
+                    android:id="@+id/etuseryear"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/thin"
+                    android:gravity="center"
+                    android:paddingLeft="20dp" />
+
+
+                <EditText
+                    android:id="@+id/etdivrno"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="Div/RollNo. OR Level Of Education"
+                    android:inputType="text|textCapWords"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etsemester"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="semester"
+                    android:textAllCaps="true"
+                    android:inputType="textCapCharacters"
+                    android:paddingLeft="20dp" />
+
+                <EditText
+                    android:id="@+id/etemail"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp" />
+
+            <EditText
+                    android:id="@+id/etpassword"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint="password"
+                    android:inputType="textVisiblePassword"
+                    android:paddingLeft="20dp"/>
+
+            <EditText
+                    android:id="@+id/etcpassword"
+                    android:layout_width="335dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/inputbackground"
+                    android:ems="10"
+                    android:fontFamily="@font/thin"
+                    android:hint=" AutoChecked_pasword"
+                    android:inputType="textVisiblePassword"
+                    android:paddingLeft="20dp" />
+
+                <Button
+                    android:id="@+id/signup"
+                    android:layout_width="170dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/loginbutton"
+                    android:fontFamily="@font/light"
+                    android:gravity="center"
+                    android:text="Sign up"
+                    android:textColor="#303561"
+                    android:textSize="15dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

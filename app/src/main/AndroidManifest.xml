@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logocrop"
+        android:label="DigiLearn"
+        android:roundIcon="@drawable/logocrop"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".student_attendanceview"></activity>
+        <activity android:name=".dt_attendance" />
+        <activity android:name=".teacher_attendance" />
+        <activity android:name=".msg" />
+        <activity android:name=".teacher_chat_1" />
+        <activity android:name=".student_chat_1" />
+        <activity android:name=".studentscore" />
+        <activity android:name=".student_Qans" />
+        <activity android:name=".quizchaplist" />
+        <activity android:name=".student_quiztest" />
+        <activity android:name=".teacher_quizquestion" />
+        <activity android:name=".teacher_quiz" />
+        <activity android:name=".aupdate" />
+        <activity android:name=".feedback" />
+        <activity android:name=".student_book" />
+        <activity android:name=".a_expenseview" />
+        <activity android:name=".teacher_expenseview" />
+        <activity android:name=".teacher_expenses" />
+        <activity android:name=".teacher_book" />
+        <activity android:name=".student_notice" />
+        <activity android:name=".teacher_notice" />
+        <activity android:name=".admin_circular" />
+        <activity
+            android:name=".Student_timetable"
+            android:label="@string/title_activity_student_timetable" />
+        <activity
+            android:name=".teacher_timetable"
+            android:label="@string/title_activity_teacher_timetable" />
+        <activity android:name=".Admin_timetabledays" />
+        <activity android:name=".Admin_timetable" />
+        <activity android:name=".teacher_getstudentata" />
+        <activity android:name=".Admin_userview" />
+        <activity android:name=".admin_profileview" />
+        <activity android:name=".Teacher_profileview" />
+        <activity android:name=".student_profileview" />
+        <activity android:name=".Student_dashboard" />
+        <activity android:name=".Teacher_dashboard" />
+        <activity android:name=".adduser" />
+        <activity android:name=".Admin_dashboard" />
+        <activity android:name=".login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

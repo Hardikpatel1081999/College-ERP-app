@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feedback"
+        android:fontFamily="@font/josefinsanslight"
+        android:textSize="45dp"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="How well app do?"
+        android:textSize="20dp"
+        android:fontFamily="@font/thin"
+        android:paddingBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/c"
+        android:progressTint="@color/gold"
+        android:numStars="5"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Any Suggestions please Comment Here!!!"
+        android:textSize="20dp"
+        android:fontFamily="@font/thin"
+        android:paddingBottom="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/comment"
+        android:ems="15"
+        android:fontFamily="@font/light"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:lines="14"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20dp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/light"
+        android:background="@drawable/b"/>
+</LinearLayout>
+</ScrollView>

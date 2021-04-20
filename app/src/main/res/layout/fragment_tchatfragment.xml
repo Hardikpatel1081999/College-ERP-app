@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5mm"
+    tools:context=".tchatfragment">
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tchatview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</FrameLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".teacher_quiz">
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/josefinsanslight"
+        android:gravity="center"
+        android:paddingLeft="7dp"
+        android:text="Add Quiz"
+        android:layout_marginRight="20dp"
+        android:textColor="#303561"
+        android:textSize="30dp" />
+
+
+
+    <Spinner
+        android:id="@+id/tqbranch"
+        android:layout_width="357dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <Spinner
+        android:id="@+id/tqyear"
+        android:layout_width="353dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432" />
+
+    <EditText
+        android:id="@+id/tqdiv"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/thin"
+        android:hint="Division"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/tsubname"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/thin"
+        android:hint="Subject Name"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/tqchapcount"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/thin"
+        android:hint="Chapter Count"
+        android:paddingLeft="10dp" />
+
+    <Button
+        android:id="@+id/tqnext"
+        android:fontFamily="@font/josefinsanslight"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_gravity="bottom"
+        android:layout_height="70dp"
+        android:background="#DBDBEA"
+        android:layout_marginTop="70dp"
+        android:text="Next" />
+
+
+</LinearLayout>

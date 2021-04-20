@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".teacher_quizquestion">
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/josefinsanslight"
+        android:gravity="center"
+        android:paddingLeft="7dp"
+        android:text="Set Question"
+        android:layout_marginRight="20dp"
+        android:textColor="#303561"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/tchap"
+        android:layout_width="94dp"
+        android:layout_height="53dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:fontFamily="@font/thin"
+        android:hint="Chap No"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/tques"
+        android:layout_width="364dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/comment"
+        android:fontFamily="@font/thin"
+        android:hint="Question"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/top1"
+        android:layout_marginLeft="20dp"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/b"
+        android:fontFamily="@font/thin"
+        android:hint="Option 1"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/top2"
+        android:layout_marginLeft="20dp"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/b"
+        android:fontFamily="@font/thin"
+        android:hint="Option 2"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/top3"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/b"
+        android:fontFamily="@font/thin"
+        android:hint="Option 3"
+        android:paddingLeft="10dp" />
+    <EditText
+        android:id="@+id/top4"
+        android:layout_width="344dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/b"
+        android:fontFamily="@font/thin"
+        android:hint="Option 4"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/topans"
+        android:layout_width="334dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/comment"
+        android:fontFamily="@font/thin"
+        android:hint="Correct Answer "
+        android:paddingLeft="10dp" />
+    <Button
+        android:id="@+id/btntdone"
+        android:fontFamily="@font/josefinsanslight"
+        android:layout_width="match_parent"
+        android:textSize="20dp"
+        android:layout_gravity="bottom"
+        android:layout_height="60dp"
+        android:background="#DBDBEA"
+        android:layout_marginTop="53dp"
+        android:text="Next" />
+</LinearLayout>
